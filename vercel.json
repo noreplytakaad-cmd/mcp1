@@ -1,36 +1,3 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
-
-
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/mpc-party1.ts",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/mpc-party1",
-      "dest": "api/mpc-party1.ts"
-    },
-    {
-      "src": "/",
-      "dest": "api/index.ts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "api/index.ts"
-    }
-  ],
-  "env": {
-    "MAIN_WEBSITE_URL": "@main_website_url",
-    "MAIN_WEBSITE_SECRET": "@main_website_secret",
-    "MPC_ALLOWED_ORIGINS": "@mpc_allowed_origins",
-    "MPC_PARTY1_SECRET": "@mpc_party1_secret"
-  }
+    "rewrites": [{ "source": "/(.*)", "destination": "/index.ts" }]
 }
