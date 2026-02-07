@@ -1,0 +1,29 @@
+{
+  "name": "taakad-mpc-party1",
+  "version": "1.0.0",
+  "description": "Party 1 MPC node running on Vercel",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "dev": "npm run build && node dev-server.js",
+    "build": "tsc",
+    "start": "node dev-server.js",
+    "vercel-build": "tsc",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^17.2.4",
+    "express": "^4.22.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^9.0.2",
+    "@vercel/node": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
