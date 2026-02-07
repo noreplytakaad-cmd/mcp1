@@ -4,7 +4,7 @@
   "description": "Party 1 MPC node running on Vercel",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "npm run build && node dev-server.js",
